@@ -288,6 +288,10 @@ a[data-message]:hover:after {
     display: inline-block;
 }
 
+section.char-desc li:not(:first-child) {
+    padding-top: 8px;
+}
+
 .peppershrike {
     width: 100%;
     background-color: #eadef6;

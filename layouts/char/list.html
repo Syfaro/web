@@ -3,7 +3,7 @@
         <article>
             <h2>{{ .Title }}</h2>
 
-            <section>
+            <section class="char-desc">
                 {{ .Content }}
             </section>
         </article>
@@ -25,6 +25,6 @@
         </section>
     </div>
 
-    {{ $app := resources.Get "js/app.js" | resources.Fingerprint }}
-    <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>
+    {{ $app := resources.Get "js/app.js" }}
+    <script src="{{ $app.RelPermalink }}"></script>
 {{ end }}

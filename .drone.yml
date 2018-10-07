@@ -6,8 +6,9 @@ pipeline:
 
   deploy:
     image: lucap/drone-netlify
+    site_id: 26af9866-53ac-4f16-ab80-5d90bcc03145
+    secrets: [ netlify_token ]
     domain: syfaro.net
     path: ./public
-    secrets: [ netlify_token ]
     when:
       branch: master

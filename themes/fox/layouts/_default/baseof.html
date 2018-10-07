@@ -4,10 +4,8 @@
 <head>
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-    <base href="{{ .Site.BaseURL }}">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.css">
     <link rel="stylesheet" href="{{ "css/fox.css" | relURL }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.css">
 
     {{ block "head" . }}{{ end }}
 </head>

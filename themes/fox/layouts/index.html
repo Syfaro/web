@@ -1,0 +1,67 @@
+{{ define "container" }}
+    <main class="container">
+        <section>
+            <a href="{{ "char" | relURL }}">Character ref & artwork</a>
+        </section>
+
+        <section class="posts">
+            <h3>Recent Blog Posts</h3>
+
+            <ul>
+                {{ range first 3 (where .Pages "Section" "blog").ByDate.Reverse }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> &mdash; {{ dateFormat "2006-01-02" .Date }}</li>
+                {{ end }}
+                <li><a href="{{ "blog" | relURL }}">Read More</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Things I Work On</h3>
+
+            {{ range where (where .Pages ".Params.homepage" true) "Section" "project" }}
+                <div class="project">
+                    <p class="project-name">
+                        <a href="{{ .Params.projecturl }}">{{ .Title }}</a>
+                    </p>
+
+                    <p>
+                        {{ .Params.projectshort }}
+                    </p>
+                </div>
+            {{ end }}
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Get In Touch</h3>
+
+            <table>
+                {{ range .Site.Data.contact }}
+                    <tr>
+                        <td>{{ .name }}</td>
+                        <td>
+                            {{ if eq .link nil }}
+                                {{ .display }}
+                            {{ else }}
+                                <a href="{{ .link }}">{{ .display }}</a>
+                            {{ end }}
+                        </td>
+                    </tr>
+                {{ end }}
+            </table>
+        </section>
+
+        <section class="others">
+            <h3>Other Things</h3>
+
+            {{ range .Site.Data.others }}
+                <div>
+                    <a href="{{ .link }}">{{ .name }}</a>
+
+                    {{ if ne .desc nil }}
+                        &mdash; {{ .desc }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        </section>
+    </main>
+{{ end }}

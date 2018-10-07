@@ -1,0 +1,10 @@
+baseURL = "https://syfaro.net"
+languageCode = "en-us"
+title = "Syfaro"
+theme = "fox"
+
+[params]
+  description = "Hi. I'm a purple fox."
+  peppershrike = "https://peppershrike.huefox.com"
+
+[taxonomies]

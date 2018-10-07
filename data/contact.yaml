@@ -1,0 +1,14 @@
+- name: Telegram
+  link: https://t.me/Syfaro
+  display: "@Syfaro"
+- name: Twitter
+  link: https://twitter.com/Syfaro
+  display: "@Syfaro"
+- name: Discord
+  display: "Syfaro#2129"
+- name: Email
+  link: "mailto:syfaro@huefox.com"
+  display: "syfaro@huefox.com"
+- name: Mastodon
+  link: https://foxesare.sexy/user/syfaro
+  display: "@Syfaro@foxesare.sexy"

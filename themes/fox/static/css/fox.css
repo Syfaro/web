@@ -1,0 +1,379 @@
+html {
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #362b70;
+    color: #eadef6;
+}
+
+body {
+    font-family: "Hack", monospace;
+    font-size: 1.35em;
+    line-height: 1.65em;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: no-common-ligatures no-discretionary-ligatures;
+    text-align: center;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #02cfff;
+    padding-bottom: 2px;
+    transition: border-bottom 0.05s ease-in;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    border-bottom: 2px solid #02cfff;
+}
+
+header {
+    margin-top: 30px;
+}
+
+header img {
+    border-radius: 50%;
+    border: 5px solid #eadef6;
+    transition: border 0.1s ease-in-out;
+}
+
+header a {
+    border: none;
+}
+
+header a:hover {
+    border: none;
+}
+
+header a:hover img {
+    border: 5px solid #02cfff;
+}
+
+article {
+    text-align: left;
+}
+
+article h1,
+article h2 {
+    text-align: center;
+}
+
+section {
+    margin-top: 75px;
+}
+
+.post section {
+    margin-top: 1em;
+}
+
+.post h6 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 1em;
+
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 5px;
+}
+
+table tbody tr:hover {
+    background-color: rgba(5, 5, 5, 0.2);
+}
+
+table tbody tr:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}
+
+code {
+    font-family: "Hack", Courier, monospace;
+}
+
+pre code {
+    display: block;
+    box-sizing: border-box;
+    overflow: auto;
+
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+    padding: 5px;
+}
+
+figcaption {
+    margin-top: -10px;
+    padding: 5px 5px 0 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 2em;
+}
+
+.container.post {
+    font-family: -apple-system, "Helvetica Neue", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+    max-width: 800px;
+}
+
+.project-name {
+    font-size: 1.2em;
+}
+
+.posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 425px;
+}
+
+.contact h3 {
+    padding-top: 1em;
+}
+
+.contact table {
+    width: 100%;
+}
+
+.contact td:first-of-type {
+    text-align: left;
+}
+
+.contact td:last-of-type {
+    text-align: right;
+}
+
+.others div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.services {
+    text-align: left;
+}
+
+.handles {
+    text-align: right;
+}
+
+.reference {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reference p,
+.reference ul {
+    text-align: left;
+}
+
+.artwork {
+    margin-bottom: 3rem;
+}
+
+.artwork a {
+    border: 0;
+}
+
+a[data-message]:hover:after {
+    z-index: 999;
+    font-size: 0.7em;
+    content: attr(data-message);
+    text-align: center;
+    background-color: black;
+    color: #eadef6;
+    border-radius: 5px;
+    border: 2px solid #eadef6;
+    padding: 5px;
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.nsfw {
+    display: none;
+}
+
+.color {
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.color-dark-purple {
+    color: white;
+    background-color: #503a92;
+}
+
+.color-light-purple {
+    color: white;
+    background-color: #6635c7;
+}
+
+.color-blue {
+    color: black;
+    background-color: #02cfff;
+}
+
+.color-blueberry {
+    color: white;
+    background-color: #604db6;
+}
+
+.color-gold {
+    color: black;
+    background-color: #d7a849;
+}
+
+.post-info h3,
+.post-info h6 {
+    display: inline-block;
+}
+
+.peppershrike {
+    width: 100%;
+    background-color: #eadef6;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.peppershrike-title {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.peppershrike-input,
+.peppershrike-submit {
+    font-family: inherit;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: #eee;
+    transition: background-color 50ms ease-out;
+}
+
+.peppershrike-input:hover,
+.peppershrike-submit:hover {
+    background-color: #fff;
+}
+
+.peppershrike-input:focus {
+    outline: 1px solid black;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.peppershrike-input {
+    box-sizing: border-box;
+}
+
+.peppershrike-submit {
+    display: block;
+    max-width: 250px;
+    margin: 10px auto 0 auto;
+}
+
+.peppershrike-submit:disabled,
+.peppershrike-submit:disabled:hover {
+    background-color: #eee;
+    color: gray;
+}
+
+.peppershrike-done {
+    text-align: center;
+}
+
+@media (min-width: 451px) {
+    .reference ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .post-info h6 {
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    a[data-message]:hover:after {
+        display: none;
+    }
+
+    .container {
+        margin-bottom: 5vh;
+    }
+
+    .contact .items {
+        flex-grow: 0;
+    }
+
+    .contact tr:not(:last-of-type) {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .contact td,
+    .contact td:first-of-type,
+    .contact td:last-of-type {
+        display: block;
+        text-align: center;
+    }
+
+    .reference {
+        width: 100%;
+        padding: 0 2vw;
+    }
+
+    .color {
+        padding: 1px 3px;
+    }
+
+    .grid img {
+        display: block;
+        width: 90%;
+        margin: 1vh auto;
+    }
+
+    .grid picture {
+        padding: 2vh 0;
+    }
+}

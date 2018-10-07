@@ -1,0 +1,22 @@
+{{ define "container" }}
+    <section class="container post">
+        <h2>Blog</h2>
+
+        {{ range (where .Pages "Section" "blog").ByDate.Reverse }}
+            <article class="post-preview">
+                <section class="post-info">
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <h6>Published {{ dateFormat "2006-01-02" .Date }}</h6>
+                </section>
+
+                <section>
+                    {{ .Summary }}
+                </section>
+
+                {{ if .Truncated }}
+                    <a href="{{ .RelPermalink }}">Read more &hellip;</a>
+                {{ end }}
+            </article>
+        {{ end }}
+    </section>
+{{ end }}

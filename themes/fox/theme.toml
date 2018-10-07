@@ -1,0 +1,7 @@
+name = "Fox"
+license = "MIT"
+homepage = "https://syfaro.net"
+
+[author]
+  name = "Syfaro"
+  homepage = "https://syfaro.net"

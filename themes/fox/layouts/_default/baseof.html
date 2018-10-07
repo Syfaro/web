@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <base href="{{ .Site.BaseURL }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.css">
+    <link rel="stylesheet" href="{{ "css/fox.css" | relURL }}">
+
+    {{ block "head" . }}{{ end }}
+</head>
+
+<body>
+    <header>
+        {{ if not .IsHome }}
+            {{ if and (eq .Section "blog") .IsPage }}
+                <a href="{{ .Section | relURL }}">
+            {{ else }}
+                <a href="{{ "" | relURL }}">
+            {{ end }}
+        {{ end }}
+
+        <picture>
+            <source srcset="{{ "img/icon.png" | relURL }} 1x, {{ "img/icon@2x.png" | relURL }} 2x">
+            <img src="{{ "img/icon.png" | relURL }}">
+        </picture>
+
+        {{ if not .IsHome }}
+        </a>
+        {{ end}}
+
+        {{ if .IsHome }}
+            <h1>{{ .Site.Title }}</h1>
+            <h2>{{ .Site.Params.description }}</h2>
+        {{ end }}
+    </header>
+
+    {{ block "container" . }}{{ end }}
+
+    <footer>
+        {{ block "footer" . }}
+            🦊🐾
+        {{ end }}
+    </footer>
+</body>
+
+</html>

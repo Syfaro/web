@@ -1,0 +1,6 @@
+{{ if .IsNamedParams }}
+    <div class="peppershrike" data-id="{{ .Get "id" }}"></div>
+{{ else }}
+    <div class="peppershrike" data-id="{{ .Get 0 }}"></div>
+{{ end }}
+

@@ -1,0 +1,38 @@
+{{ define "container" }}
+    <div class="container post">
+        <article>
+            <h2>Artwork by <a href="{{ .Params.link }}">{{ .Params.name }}</h2></a>
+
+            {{ if .Content }}
+            <section>
+                {{ .Content }}
+            </section>
+            {{ end }}
+
+            <section>
+                {{ range .Page.Resources.ByType "image" }}
+                    {{ $reg := .Fit "1000x1000" }}
+                    {{ $ret := .Fit "2000x2000" }}
+                    <figure>
+                        <img src="{{ $reg.RelPermalink }}" srcset="{{ $reg.RelPermalink }} 1x, {{ $ret.RelPermalink }} 2x">
+                        {{ if or .Params.source .Params.message }}
+                            <figcaption>
+                                {{ if .Params.message }}
+                                    <div>
+                                        {{ .Params.message }}
+                                    </div>
+                                {{ end }}
+
+                                {{ if .Params.source }}
+                                    <div>
+                                        <a href="{{ .Params.source }}">{{ .Params.source }}</a>
+                                    </div>
+                                {{ end }}
+                            </figcaption>
+                        {{ end }}
+                    </figure>
+                {{ end }}
+            </section>
+        </article>
+    </div>
+{{ end }}

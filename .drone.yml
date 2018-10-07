@@ -2,7 +2,7 @@ pipeline:
   build:
     image: cibuilds/hugo:0.49
     commands:
-      - hugo
+      - hugo --minify
 
   deploy:
     image: lucap/drone-netlify

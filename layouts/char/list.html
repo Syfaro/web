@@ -1,0 +1,30 @@
+{{ define "container" }}
+    <div class="container post">
+        <article>
+            <h2>{{ .Title }}</h2>
+
+            <section>
+                {{ .Content }}
+            </section>
+        </article>
+    </div>
+
+    <div class="container art">
+        <section class="artwork">
+            <h3>Artwork</h3>
+
+            <div class="grid" id="art">
+                {{ partial "char/grid.html" (dict "ctx" . "type" "artwork") }}
+            </div>
+
+            <h3>Icons</h3>
+
+            <div class="grid" id="icons">
+                {{ partial "char/grid.html" (dict "ctx" . "type" "icon") }}
+            </div>
+        </section>
+    </div>
+
+    {{ $app := resources.Get "js/app.js" | resources.Fingerprint }}
+    <script src="{{ $app.RelPermalink }}" integrity="{{ $app.Data.Integrity }}"></script>
+{{ end }}

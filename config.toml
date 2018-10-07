@@ -3,8 +3,14 @@ languageCode = "en-us"
 title = "Syfaro"
 theme = "fox"
 
+enableGitInfo = true
+relativeURLs = true
+
 [params]
   description = "Hi. I'm a purple fox."
   peppershrike = "https://peppershrike.huefox.com"
+
+[imaging]
+  resampleFilter = "Lanczos"
 
 [taxonomies]

@@ -1,0 +1,41 @@
+{{ $size := "200x" }}
+{{ $retSize := "400x" }}
+{{ if eq .type "artwork" }}
+    {{ $size = "400x" }}
+    {{ $retSize = "800x" }}
+{{ end }}
+
+{{ range .ctx.Pages }}
+    {{ $page := . }}
+    {{ range .Resources.ByType "image" }}
+        {{ $shouldDisplay := false }}
+
+        {{ if and .Params.icon (eq $.type "icon") }}
+            {{ $shouldDisplay = true }}
+        {{ end }}
+
+        {{ if and (not .Params.icon) (eq $.type "artwork") }}
+            {{ $shouldDisplay = true }}
+        {{ end }}
+
+        {{ if $shouldDisplay }}
+            {{ $reg := .Resize $size }}
+            {{ $ret := .Resize $retSize }}
+
+            {{ $link := .Params.source }}
+            {{ if not $link }}
+                {{ $link = $page.Params.link }}
+            {{ end }}
+
+            <a
+                href="{{ $link }}"
+                {{ if .Params.message }} data-message="{{ .Params.message }}" {{ end }}
+                {{ if .Params.nsfw }} class="nsfw" {{ end }}
+            >
+                <img
+                    src="{{ $reg.RelPermalink }}"
+                    srcset="{{ $reg.RelPermalink }} 1x, {{ $ret.RelPermalink }} 2x">
+            </a>
+        {{ end }}
+    {{ end }}
+{{ end }}

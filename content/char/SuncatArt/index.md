@@ -1,0 +1,9 @@
+---
+name: SuncatArt
+link: https://twitter.com/SuncatArt
+
+resources:
+- src: syfaro_500x1000_by_citriel-dbwqgzs.png
+  params:
+    icon: true
+---

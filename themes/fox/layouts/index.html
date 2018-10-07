@@ -18,14 +18,14 @@
         <section>
             <h3>Things I Work On</h3>
 
-            {{ range where .Pages "Section" "project" }}
+            {{ range .Site.Data.projects }}
                 <div class="project">
                     <p class="project-name">
-                        <a href="{{ .Params.projecturl }}">{{ .Title }}</a>
+                        <a href="{{ .link }}">{{ .name }}</a>
                     </p>
 
                     <p>
-                        {{ .Params.projectshort }}
+                        {{ .desc | markdownify }}
                     </p>
                 </div>
             {{ end }}

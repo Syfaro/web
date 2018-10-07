@@ -4,7 +4,7 @@
   link: "files/syfaro.asc"
 - name: "git repos"
   link: "https://git.huefox.com"
-  desc: "source code for projects (including this site)"
+  desc: "source code for projects (including [this site](https://git.huefox.com/syfaro/web))"
 - name: "ko-fi"
   link: "https://ko-fi.com/syfaro"
   desc: "if you really enjoy something I've done"

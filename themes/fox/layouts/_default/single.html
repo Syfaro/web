@@ -2,6 +2,7 @@
     <div class="container post">
         <article>
             <h2>{{ .Title }}</h2>
+            <h6 class="published-at">{{ dateFormat "2006-01-02" .Date }} &middot; {{ .ReadingTime }} mins</h6>
 
             <section>
                 {{ .Content }}

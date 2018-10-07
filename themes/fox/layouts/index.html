@@ -58,7 +58,7 @@
                     <a href="{{ .link }}">{{ .name }}</a>
 
                     {{ if ne .desc nil }}
-                        &mdash; {{ .desc }}
+                        &mdash; {{ .desc | markdownify }}
                     {{ end }}
                 </div>
             {{ end }}

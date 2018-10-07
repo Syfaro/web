@@ -1,6 +1,8 @@
 pipeline:
   build:
     image: cibuilds/hugo:0.49
+    environment:
+      - HUGO_ENV=production
     commands:
       - hugo --minify
 

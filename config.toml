@@ -9,6 +9,7 @@ relativeURLs = true
 [params]
   description = "Hi. I'm a purple fox."
   peppershrike = "https://peppershrike.huefox.com"
+  fathom = "//fathom.syfaro.net/tracker.js"
 
 [imaging]
   resampleFilter = "Lanczos"

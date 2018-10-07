@@ -9,16 +9,16 @@
 
             <ul>
                 {{ range first 3 (where .Pages "Section" "blog").ByDate.Reverse }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> &mdash; {{ dateFormat "2006-01-02" .Date }}</li>
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="published-at mobile-hidden"> &middot; {{ dateFormat "2006-01-02" .Date }}</li></time>
                 {{ end }}
-                <li><a href="{{ "blog" | relURL }}">Read More</a></li>
+                <li class="text-center mt-1"><a href="{{ "blog" | relURL }}">Read More</a></li>
             </ul>
         </section>
 
         <section>
             <h3>Things I Work On</h3>
 
-            {{ range where (where .Pages ".Params.homepage" true) "Section" "project" }}
+            {{ range where .Pages "Section" "project" }}
                 <div class="project">
                     <p class="project-name">
                         <a href="{{ .Params.projecturl }}">{{ .Title }}</a>
@@ -34,7 +34,7 @@
         <section id="contact" class="contact">
             <h3>Get In Touch</h3>
 
-            <table>
+            <table class="contact-table">
                 {{ range .Site.Data.contact }}
                     <tr>
                         <td>{{ .name }}</td>

@@ -6,7 +6,7 @@
             <article class="post-preview">
                 <section class="post-info">
                     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    <h6>Published {{ dateFormat "2006-01-02" .Date }}</h6>
+                    <h6 class="published-at">Published <time>{{ dateFormat "2006-01-02" .Date }}</time></h6>
                 </section>
 
                 <section>

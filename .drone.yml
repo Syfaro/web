@@ -1,0 +1,13 @@
+pipeline:
+  build:
+    image: cibuilds/hugo:0.49
+    commands:
+      - hugo
+
+  deploy:
+    image: lucap/drone-netlify
+    domain: syfaro.net
+    path: ./public
+    secrets: [ netlify_token ]
+    when:
+      branch: master

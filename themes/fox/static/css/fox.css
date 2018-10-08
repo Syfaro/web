@@ -288,11 +288,6 @@ a[data-message]:hover:after {
     display: inline-block;
 }
 
-h6.published-at {
-    margin-top: -2em;
-    text-align: center;
-}
-
 section.char-desc li:not(:first-child) {
     padding-top: 8px;
 }
@@ -369,6 +364,11 @@ section.char-desc li:not(:first-child) {
 
     .post-info h6 {
         margin-left: 1em;
+    }
+
+    h6.published-at {
+        margin-top: -2em;
+        text-align: center;
     }
 }
 

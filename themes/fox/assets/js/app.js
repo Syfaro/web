@@ -109,7 +109,9 @@ function updateGrid() {
     });
 }
 function revealNSFW(ev) {
-    ev.preventDefault();
+    if (ev) {
+        ev.preventDefault();
+    }
     hidden.forEach(item => item.classList.remove('nsfw'));
     updateGrid();
     show.classList.add('nsfw');

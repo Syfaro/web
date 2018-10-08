@@ -9,7 +9,7 @@
 
             <ul>
                 {{ range first 3 (where .Pages "Section" "blog").ByDate.Reverse }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="published-at mobile-hidden"> &middot; {{ dateFormat "2006-01-02" .Date }}</li></time>
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><time class="published-at mobile-hidden">{{ dateFormat "2006-01-02" .Date }}</li></time>
                 {{ end }}
                 <li class="text-center mt-1"><a href="{{ "blog" | relURL }}">Read More</a></li>
             </ul>

@@ -370,6 +370,15 @@ section.char-desc li:not(:first-child) {
         margin-top: -2em;
         text-align: center;
     }
+
+    section.posts time {
+        display: block;
+        float: right;
+    }
+
+    section.posts li {
+        clear: both;
+    }
 }
 
 @media (max-width: 450px) {

@@ -59,6 +59,7 @@
                 o.parentNode.insertBefore(r, o)
             })(document, window, '{{ .Site.Params.fathom }}', 'fathom');
 
+            fathom('set', 'siteId', '{{ .Site.Params.fathom_id }}');
             fathom('trackPageview');
         </script>
     {{ end }}

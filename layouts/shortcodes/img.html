@@ -1,6 +1,16 @@
-{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $images := .Page.Resources.ByType "image" }}
 
-<figure>
-	<img src="{{ $img.RelPermalink }}" alt="(.Get 1)" />
-	<figcaption>{{ .Get 1 }}</figcaption>
-</figure>
+{{ $img := $images.GetMatch (.Get 0)}}
+
+{{ if ne $img.MediaType.SubType "svg" }}
+	{{ $img = $img.Resize "800x" }}
+{{ end }}
+
+{{ with (.Get 1) }}
+	<figure>
+		<img src="{{ $img.RelPermalink }}" alt="{{ . }}" />
+		<figcaption>{{ . }}</figcaption>
+	</figure>
+{{ else }}
+	<img src="{{ $img.RelPermalink }}" />
+{{ end }}

@@ -1,6 +1,6 @@
 ---
 name: kelevtov
-link: https://www.weasyl.com/~kavaeric
+link: https://www.furaffinity.net/user/kelevtov.
 
 resources:
 - src: syfaro_sketchcommission1edit.png
@@ -10,5 +10,5 @@ resources:
   params:
     nsfw: true
     message: Who wouldn't love to be tied up for public use~
-    source: https://www.weasyl.com/~kavaeric/submissions/1002529/com-headshot-syfaro
+    source: https://www.furaffinity.net/view/20201962/
 ---

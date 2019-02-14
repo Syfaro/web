@@ -4,9 +4,8 @@ draft: false
 type: "char"
 ---
 
-Male red fox. Generally
-{{<charcolor "dark-purple">}}dark purple{{</charcolor>}} with
-just a few markings.
+Male red fox. Generally {{<charcolor "dark-purple">}}purple{{</charcolor>}}
+with a few markings.
 
 * Typical red fox markings, except with shades of purple
 * {{<charcolor "blue">}}Blue{{</charcolor>}} stripe down the spine to the tip of the tail
@@ -22,7 +21,9 @@ I quite like the recent trend of lighter shades of purple, the icon at
 the top is my favorite colors so far. I also tend to love bright, vibrant
 colors. I'm really not picky, and love seeing what artists envision :3
 
-No specific colors are expected to be used, artists are encouraged to
+Foxes do have slitted pupils, which I prefer if it works in the artists' style.
+
+No specific shades are expected to be used, artists are encouraged to
 use whatever fits best with their style and the theme of the work.
 
 {{<nsfw>}}

@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: cibuilds/hugo:0.55
+    image: cibuilds/hugo:0.57
     environment:
       - HUGO_ENV=production
     commands:

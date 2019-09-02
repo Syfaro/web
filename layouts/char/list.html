@@ -13,13 +13,13 @@
         <section class="artwork">
             <h3>Artwork</h3>
 
-            <div class="grid" id="art">
+            <div id="art">
                 {{ partial "char/grid.html" (dict "ctx" . "type" "artwork") }}
             </div>
 
             <h3>Icons</h3>
 
-            <div class="grid" id="icons">
+            <div id="icons">
                 {{ partial "char/grid.html" (dict "ctx" . "type" "icon") }}
             </div>
         </section>

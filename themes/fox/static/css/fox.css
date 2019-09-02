@@ -292,6 +292,20 @@ section.char-desc li:not(:first-child) {
     padding-top: 8px;
 }
 
+.artwork-grid {
+    column-gap: 2px;
+}
+
+.artwork-grid.grid-200 {
+    columns: 12 200px;
+    grid-auto-columns: 200px;
+}
+
+.artwork-grid.grid-400 {
+    columns: 6 400px;
+    grid-auto-columns: 400px;
+}
+
 .peppershrike {
     width: 100%;
     background-color: #eadef6;

@@ -1,41 +1,47 @@
 {{ $size := "200x" }}
 {{ $retSize := "400x" }}
+{{ $gridClass := "grid-200" }}
 {{ if eq .type "artwork" }}
     {{ $size = "400x" }}
     {{ $retSize = "800x" }}
+    {{ $gridClass = "grid-400" }}
 {{ end }}
 
-{{ range .ctx.Pages }}
-    {{ $page := . }}
-    {{ range .Resources.ByType "image" }}
-        {{ $shouldDisplay := false }}
+<div class="artwork-grid {{ $gridClass }}">
+    {{ range .ctx.Pages }}
+        {{ $page := . }}
+        {{ range .Resources.ByType "image" }}
+            {{ $shouldDisplay := false }}
 
-        {{ if and .Params.icon (eq $.type "icon") }}
-            {{ $shouldDisplay = true }}
-        {{ end }}
-
-        {{ if and (not .Params.icon) (eq $.type "artwork") }}
-            {{ $shouldDisplay = true }}
-        {{ end }}
-
-        {{ if $shouldDisplay }}
-            {{ $reg := .Resize $size }}
-            {{ $ret := .Resize $retSize }}
-
-            {{ $link := .Params.source }}
-            {{ if not $link }}
-                {{ $link = $page.Params.link }}
+            {{ if and .Params.icon (eq $.type "icon") }}
+                {{ $shouldDisplay = true }}
             {{ end }}
 
-            <a
-                href="{{ $link }}"
-                {{ if .Params.message }} data-message="{{ .Params.message }}" {{ end }}
-                {{ if .Params.nsfw }} class="nsfw" {{ end }}
-            >
-                <img
-                    src="{{ $reg.RelPermalink }}"
-                    srcset="{{ $reg.RelPermalink }} 1x, {{ $ret.RelPermalink }} 2x">
-            </a>
+            {{ if and (not .Params.icon) (eq $.type "artwork") }}
+                {{ $shouldDisplay = true }}
+            {{ end }}
+
+            {{ if $shouldDisplay }}
+                {{ $reg := .Resize $size }}
+                {{ $ret := .Resize $retSize }}
+
+                {{ $link := .Params.source }}
+                {{ if not $link }}
+                    {{ $link = $page.Params.link }}
+                {{ end }}
+
+                <div class="grid-item">
+                    <a
+                        href="{{ $link }}"
+                        {{ if .Params.message }} data-message="{{ .Params.message }}" {{ end }}
+                        {{ if .Params.nsfw }} class="nsfw" {{ end }}
+                    >
+                        <img
+                            src="{{ $reg.RelPermalink }}"
+                            srcset="{{ $reg.RelPermalink }} 1x, {{ $ret.RelPermalink }} 2x">
+                    </a>
+                </div>
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
+</div>

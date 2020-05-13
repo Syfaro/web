@@ -9,6 +9,3 @@
 - name: Email
   link: "mailto:syfaro@huefox.com"
   display: "syfaro@huefox.com"
-- name: Mastodon
-  link: https://foxesare.sexy/user/syfaro
-  display: "@Syfaro@foxesare.sexy"

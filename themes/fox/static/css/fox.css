@@ -306,6 +306,10 @@ section.char-desc li:not(:first-child) {
     grid-auto-columns: 400px;
 }
 
+.artwork-grid img {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .peppershrike {
     width: 100%;
     background-color: #eadef6;

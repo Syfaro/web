@@ -4,7 +4,7 @@ draft: false
 type: "char"
 ---
 
-Male red fox. Generally {{<charcolor "dark-purple">}}purple{{</charcolor>}}
+Red fox. Generally {{<charcolor "dark-purple">}}purple{{</charcolor>}}
 with a few markings.
 
 * Typical red fox markings, except with shades of purple

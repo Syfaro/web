@@ -1,16 +1,32 @@
-pipeline:
-  build:
-    image: cibuilds/hugo:0.57
-    environment:
-      - HUGO_ENV=production
-    commands:
-      - hugo --minify
+---
+kind: pipeline
+name: default
 
-  deploy:
-    image: lucap/drone-netlify
-    site_id: 26af9866-53ac-4f16-ab80-5d90bcc03145
-    secrets: [ netlify_token ]
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: build
+  pull: always
+  image: cibuilds/hugo:0.57
+  commands:
+  - hugo --minify
+  environment:
+    HUGO_ENV: production
+
+- name: deploy
+  pull: always
+  image: lucap/drone-netlify
+  settings:
     domain: syfaro.net
     path: ./public
-    when:
-      branch: master
+    site_id: 26af9866-53ac-4f16-ab80-5d90bcc03145
+  environment:
+    NETLIFY_TOKEN:
+      from_secret: netlify_token
+  when:
+    branch:
+    - master
+
+...

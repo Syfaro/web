@@ -47,7 +47,10 @@ To use it, reply to any photo posted in the group with the `/source` command.
 There is also the `/mirror` command to get the images from posted links. This
 works with any number of links in the message.
 
-![Replying to a message in a Telegram chat with `/mirro@FoxBot` with a copy of the image from the previous link](mirror.gif)
+![Replying to a message in a Telegram chat with `/mirror@FoxBot` with a copy of the image from the previous link](mirror.gif)
+
+If the bot has delete permissions in the chat, it will delete the the `/source`
+or `/mirror` command and reply directly to the message it is interacting with.
 
 You can also enable automatically sourcing all images posted within a group.
 This can only be enabled by a group administrator and the bot must also be given

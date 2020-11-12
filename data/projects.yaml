@@ -1,3 +1,6 @@
+- name: FoxBot
+  desc: A Telegram bot to make sharing artwork easier and more considerate.
+  link: https://t.me/FoxBot
 - name: Furry Art Multiuploader
   desc: A tool that allows artists to upload to multiple sites at once instead of having to upload the same thing on many different sites.
   link: https://multiupload.us

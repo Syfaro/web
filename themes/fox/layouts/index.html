@@ -4,7 +4,7 @@
             <a href="{{ "char" | relURL }}">Character ref & artwork</a>
         </section>
 
-        <section class="posts">
+        <section class="limit-width posts">
             <h3>Recent Blog Posts</h3>
 
             <ul>
@@ -15,7 +15,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="limit-width things-worked-on">
             <h3>Things I Work On</h3>
 
             {{ range .Site.Data.projects }}
@@ -31,7 +31,7 @@
             {{ end }}
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="limit-width contact">
             <h3>Get In Touch</h3>
 
             <table class="contact-table">

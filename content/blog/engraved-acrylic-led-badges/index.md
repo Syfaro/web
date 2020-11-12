@@ -17,10 +17,6 @@ If you're not already familiar with what they look like, here's a few photos.
 {{<img "BadgeFinal.jpg">}}
 {{<img "BadgeBack.jpg">}}
 
-I'd love to get some feedback on what people would be comfortable spending on something like this. If you wouldn't mind filling out this quick question about it, I'd really appreciate it.
-
-{{< peppershrike 5 >}}
-
 There's a number of issues with the current revision such as poor user interface (a single switch that controls mode and brightness), a large and clearly 3D printed case, and general imperfections in the acrylic (it was cut quickly on a table saw).
 
 Moving forward, there's a number of refinements that must be reached before they could be sold. I have to figure out a new interface that allows enough configuration without being uncomfortable to use, how to cut and engrave the acrylic without imperfections, and generally improve the reliability and sturdiness of it. Hot gluing the acrylic in place worked well enough for a weekend but it does not feel sturdy. Even with being careful with them, the acrylic was covered in micro-scratches from the weekend. Although these scratches are not visible unless looking at the right angle, evaluating some kind of protective coating seems worthwhile.
@@ -38,5 +34,3 @@ tl;dr,
 * There's a number of issues I need to figure out first
 * I don't know what they cost me yet or what I'm going to charge for them
 * I'm hoping to do preorders in a few months assuming everything works out
-
-{{< en_peppershrike >}}

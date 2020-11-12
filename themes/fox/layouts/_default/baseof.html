@@ -41,7 +41,14 @@
 
     <footer>
         {{ block "footer" . }}
-            🦊🐾
+            {{ if not (eq .Type "char") }}
+                <picture style="display: block; height: 363px">
+                    <source srcset="{{ "img/footer.png" | relURL }} 1x, {{ "img/footer@2xp.png" | relURL }} 2x">
+                    <img src="{{ "img/footer.png" | relURL }}">
+                </picture>
+            {{ else }}
+                🦊🐾
+            {{ end }}
         {{ end }}
     </footer>
 

@@ -6,8 +6,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #362b70;
-    color: #eadef6;
+    background-color: #fff;
+    color: #111;
 }
 
 body {
@@ -23,13 +23,13 @@ a,
 a:visited,
 a:active {
     text-decoration: none;
-    color: #02cfff;
+    color: #990de2;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
 }
 
 a:hover {
-    border-bottom: 2px solid #02cfff;
+    border-bottom: 2px solid #990de2;
 }
 
 header {
@@ -131,6 +131,11 @@ figure {
     margin: 2em auto;
 }
 
+figure img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 figcaption {
     display: table-caption;
     caption-side: bottom;
@@ -164,7 +169,6 @@ figcaption {
 
 .posts ul {
     width: 100%;
-    max-width: 450px;
     margin: 0 auto;
 
     text-align: left;
@@ -183,7 +187,6 @@ figcaption {
 
 .contact {
     margin: 0 auto;
-    max-width: 425px;
 }
 
 .contact h3 {
@@ -306,72 +309,18 @@ section.char-desc li:not(:first-child) {
     grid-auto-columns: 400px;
 }
 
-.artwork-grid img {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.peppershrike {
-    width: 100%;
-    background-color: #eadef6;
-    color: black;
-    border-radius: 5px;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.peppershrike-title {
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.peppershrike-input,
-.peppershrike-submit {
-    font-family: inherit;
-    width: 100%;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    background-color: #eee;
-}
-
-.peppershrike-input:hover,
-.peppershrike-submit:hover {
-    background-color: #fff;
-}
-
-.peppershrike-input:focus {
-    outline: 1px solid black;
-    border-radius: 0;
-    background-color: #fff;
-}
-
-.peppershrike-input {
-    box-sizing: border-box;
-}
-
-.peppershrike-submit {
-    display: block;
-    max-width: 250px;
-    margin: 10px auto 0 auto;
-}
-
-.peppershrike-submit:disabled,
-.peppershrike-submit:disabled:hover {
-    background-color: #eee;
-    color: gray;
-}
-
-.peppershrike-done {
-    text-align: center;
-}
-
 .mobile-hidden {
     display: initial;
 }
 
 .text-center {
     text-align: center;
+}
+
+.limit-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
 }
 
 @media (min-width: 451px) {
@@ -454,5 +403,23 @@ section.char-desc li:not(:first-child) {
 
     .post-info .published-at {
         display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background-color: #111;
+        color: #eee;
+    }
+
+    a,
+    a:visited,
+    a:active {
+        color: #02cfff;
+    }
+
+    a:hover {
+        border-bottom-color: #02cfff;
     }
 }

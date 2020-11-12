@@ -37,6 +37,7 @@
                         {{ if .Params.nsfw }} class="nsfw" {{ end }}
                     >
                         <img
+                            loading="lazy"
                             src="{{ $reg.RelPermalink }}"
                             srcset="{{ $reg.RelPermalink }} 1x, {{ $ret.RelPermalink }} 2x">
                     </a>

@@ -21,7 +21,7 @@
             {{ range .Site.Data.projects }}
                 <div class="project">
                     <p class="project-name">
-                        <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+                        <a href="{{ .link }}" target="_blank" class="umami--click--project-{{ lower (strings.Replace .name " " "-") }}">{{ .name }}</a>
                     </p>
 
                     <p>
@@ -42,7 +42,7 @@
                             {{ if eq .link nil }}
                                 {{ .display }}
                             {{ else }}
-                                <a href="{{ .link }}" rel="me">{{ .display }}</a>
+                                <a href="{{ .link }}" class="umami--click--contact-{{ lower .name }}" rel="me">{{ .display }}</a>
                             {{ end }}
                         </td>
                     </tr>

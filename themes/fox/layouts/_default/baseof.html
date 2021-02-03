@@ -52,23 +52,8 @@
         {{ end }}
     </footer>
 
-    {{ if and (eq "production" (getenv "HUGO_ENV")) .Site.Params.fathom }}
-        <script>
-            (function (s, y, f, a, r, o) {
-                y[a] = y[a] || function () {
-                    (y[a].q = y[a].q || []).push(arguments)
-                };
-                r = s.createElement('script'),
-                    o = s.getElementsByTagName('script')[0];
-                r.async = 1;
-                r.src = f;
-                r.id = 'fathom-script';
-                o.parentNode.insertBefore(r, o)
-            })(document, window, '{{ .Site.Params.fathom }}', 'fathom');
-
-            fathom('set', 'siteId', '{{ .Site.Params.fathom_id }}');
-            fathom('trackPageview');
-        </script>
+    {{ if and (eq "production" (getenv "HUGO_ENV")) .Site.Params.umami }}
+        <script async defer data-website-id="{{ .Site.Params.umami_id }}" src="{{ .Site.Params.umami }}"></script>
     {{ end }}
 </body>
 

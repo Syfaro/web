@@ -8,8 +8,8 @@ relativeURLs = true
 
 [params]
   description = "Hi. I'm a purple fox."
-  fathom = "//fathom.huefox.com/tracker.js"
-  fathom_id = "OCGRF"
+  umami = "https://u.syfaro.com/umami.js"
+  umami_id = "20be2cc7-67be-48f3-8614-64f689910989"
 
 [imaging]
   resampleFilter = "Lanczos"

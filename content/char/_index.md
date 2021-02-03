@@ -34,6 +34,6 @@ use whatever fits best with their style and the theme of the work.
     infrequently. Quite often seen locked in a chastity device.
 {{</nsfw>}}
 
-{{<reveal>}}
+{{<reveal nsfw>}}
     Reveal 18+ content
 {{</reveal>}}

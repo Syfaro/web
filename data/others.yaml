@@ -2,7 +2,7 @@
   link: "files/syfaro.pub"
 - name: "gpg public key"
   link: "files/syfaro.asc"
-- name: "git repos"
+- name: "github"
   link: "https://github.com/Syfaro"
   desc: "source code for projects"
 - name: "ko-fi"

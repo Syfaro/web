@@ -1,12 +1,12 @@
 - name: FoxBot
   desc: A Telegram bot to make sharing artwork easier and more considerate.
   link: https://t.me/FoxBot
-- name: Furry Art Multiuploader
-  desc: A tool that allows artists to upload to multiple sites at once instead of having to upload the same thing on many different sites.
-  link: https://multiupload.us
 - name: FuzzySearch
   desc: A site to reverse image search furry artwork against FurAffinity, e621, and Twitter.
   link: https://fuzzysearch.net
+- name: Furry Art Multiuploader
+  desc: A tool that allows artists to upload to multiple sites at once instead of having to upload the same thing on many different sites.
+  link: https://multiupload.us
 - name: go-telegram-bot-api
   desc: A golang wrapper for the Telegram Bot API.
   link: https://github.com/go-telegram-bot-api/telegram-bot-api

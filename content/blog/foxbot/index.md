@@ -25,6 +25,8 @@ to the artist's page. If a direct link to an image on FA or e621 is posted, it
 will convert the link back into the original submission. Images on unknown sites
 are reverse image searched to determine the original source.
 
+The bot can also convert WebM videos to formats supported by Telegram.
+
 ### Private Mode
 
 If you're looking for the source of an image, all you have to do is forward or
@@ -32,6 +34,11 @@ paste the image to the bot. Within a few seconds, you'll get a reply with where
 the image may have come from.
 
 ![Pasting an image into a Telegram chat with "@FoxBot"](private.gif)
+
+In the unfortunate case that the source can't be found, you have the option to
+get a notification if it is found sometime in the future. Clicking the
+'Notify Me' button will send you up to one message if the source is ever
+located.
 
 ### Group Mode
 
@@ -68,6 +75,8 @@ if the source was already included.
 Lastly, you can add the bot to your Telegram channel and it will update all of
 the posts to include a source. Adding it to your channel will automatically
 enable this feature.
+
+It only needs permission to edit messages.
 
 ![Pasting an image into a Telegram channel, waiting, and seeing a "Source" button appear on the post](channel_source.gif)
 

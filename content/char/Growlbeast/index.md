@@ -16,9 +16,12 @@ resources:
   params:
     icon: true
     message: Sly fox~
-    source: https://twitter.com/growlbeast/status/603283035002273792
+    source: https://twitter.com/Growlbeast/status/603283035002273792
 - src: SyfaroSMOL.png
   params:
     icon: true
-    source: https://twitter.com/Growlbeast/status/1156681983197511682
+- src: image0.png
+  params:
+    icon: true
+    source: https://twitter.com/Growlbeast/status/1393121146405482499
 ---

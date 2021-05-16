@@ -1,6 +1,6 @@
 ---
 name: pig
-link: https://www.furaffinity.net/user/paws/
+link: https://www.furaffinity.net/user/pig/
 
 resources:
 - src: doodle3.png

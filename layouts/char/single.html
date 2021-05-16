@@ -1,7 +1,11 @@
 {{ define "container" }}
     <div class="container post">
         <article>
-            <h2>Artwork by <a href="{{ .Params.link }}">{{ .Params.name }}</h2></a>
+            {{ if .Params.link }}
+                <h2>Artwork by <a href="{{ .Params.link }}">{{ .Params.name }}</h2></a>
+            {{ else }}
+                <h2>Artwork by {{ .Params.name }}</a>
+            {{ end }}
 
             {{ if .Content }}
             <section>

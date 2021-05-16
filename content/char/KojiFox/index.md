@@ -1,6 +1,6 @@
 ---
 name: KojiFox
-link: https://www.weasyl.com/~kavaeric
+link: https://twitter.com/KineticFoxy
 
 resources:
 - src: Syfaro_Minimal_Twitter_500x500_Corrected.png

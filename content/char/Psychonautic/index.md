@@ -1,6 +1,6 @@
 ---
 name: Psychonautic
-link: https://www.furaffinity.net/user/paws/
+link: https://www.furaffinity.net/user/psychonautic/
 
 resources:
 - src: Syfaro.png

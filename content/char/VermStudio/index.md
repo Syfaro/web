@@ -1,10 +1,9 @@
 ---
 name: VermStudio
-link: https://www.furaffinity.net/user/thrushes/
+link: https://twitter.com/VermStudio
 
 resources:
 - src: maw.png
   params:
     icon: true
-    source: https://twitter.com/VermStudio/status/639629069114474496
 ---

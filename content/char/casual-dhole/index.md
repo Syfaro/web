@@ -1,6 +1,6 @@
 ---
 name: casual-dhole
-link: https://www.weasyl.com/~casual-dhole
+link: https://bagelcollie.carrd.co/
 
 resources:
 - src: fylninsyf2_(web).png

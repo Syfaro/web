@@ -1,6 +1,6 @@
 ---
 name: kelevtov
-link: https://www.furaffinity.net/user/kelevtov.
+link: https://www.furaffinity.net/user/kelevtov
 
 resources:
 - src: syfaro_sketchcommission1edit.png

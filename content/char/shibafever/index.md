@@ -1,6 +1,6 @@
 ---
 name: Shibafever
-link: https://twitter.com/shibafever_art
+link: https://twitter.com/astroshiba_art
 
 resources:
 - src: IMG_0265.jpg

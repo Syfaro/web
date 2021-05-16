@@ -1,6 +1,6 @@
 ---
 name: OrlandoFox
-link: https://www.furaffinity.net/user/thedoggygal
+link: https://twitter.com/Orlando_Fox
 
 resources:
 - src: vzzkAii.png

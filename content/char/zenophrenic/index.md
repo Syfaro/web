@@ -1,6 +1,6 @@
 ---
 name: zenophrenic
-link: https://zenophrenic.weebly.com/
+link: https://zenophelion.carrd.co/
 
 resources:
 - src: Photo Apr 29, 2 10 28 AM.png

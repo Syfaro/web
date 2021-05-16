@@ -32,7 +32,7 @@
 
                 <div class="grid-item">
                     <a
-                        href="{{ $link }}"
+                        {{ if not $link }} disabled="disabled" {{ else }} href="{{ $link }}" {{ end }}
                         {{ if .Params.message }} data-message="{{ .Params.message }}" {{ end }}
                         {{ if .Params.nsfw }} class="nsfw" {{ end }}
                     >

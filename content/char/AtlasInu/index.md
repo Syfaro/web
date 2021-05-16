@@ -1,6 +1,6 @@
 ---
 name: AtlasInu
-link: https://atlasinu.net/
+link: https://twitter.com/atlasinu
 
 resources:
 - src: file.png

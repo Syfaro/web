@@ -1,6 +1,6 @@
 ---
 name: LazerT
-link: https://twitter.com/Growlbeast
+link: https://twitter.com/LAZER__T
 
 resources:
 - src: syfaro pattern.png

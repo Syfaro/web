@@ -101,6 +101,7 @@ an API to implement reverse searching in other projects.
 | `/settings`      | Some options for the bot, such as preferred ordering of sites in source results. |
 | `/groupsource`   | Automatically try to find sources for every image posted in a group that doesn't already have a source. |
 | `/grouppreviews` | Hide link previews for sources posted in the group. |
+| `/groupalbums`   | Skip automatic sources for photos in an album. |
 
 ### Artwork Used
 

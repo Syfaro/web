@@ -25,6 +25,9 @@ to the artist's page. If a direct link to an image on FA or e621 is posted, it
 will convert the link back into the original submission. Images on unknown sites
 are reverse image searched to determine the original source.
 
+You can request the inclusion of the image's title and artist by including
+`#info` with your URL. You can also include tags by using `#tags` with your URL.
+
 The bot can also convert WebM videos to formats supported by Telegram.
 
 ### Private Mode
@@ -101,7 +104,7 @@ an API to implement reverse searching in other projects.
 | `/settings`      | Some options for the bot, such as preferred ordering of sites in source results. |
 | `/groupsource`   | Automatically try to find sources for every image posted in a group that doesn't already have a source. |
 | `/grouppreviews` | Hide link previews for sources posted in the group. |
-| `/groupalbums`   | Skip automatic sources for photos in an album. |
+| `/groupalbums`   | Toggle between displaying album sources in group or by generating a URL to all sources. |
 
 ### Artwork Used
 
